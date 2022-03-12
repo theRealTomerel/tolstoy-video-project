@@ -1,0 +1,17 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Segoe UI';
+}
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background:#F5F5F6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
