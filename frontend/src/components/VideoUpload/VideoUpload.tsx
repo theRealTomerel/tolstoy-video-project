@@ -48,6 +48,7 @@ const VideoUpload=()=> {
   
   useEffect(()=>{console.log(videoInformation)},[videoInformation])
   const onSubmit = () => {
+    if(vieoInformation.name.length!==0&&vieoInformation.description.length!==0&video){
     const data = new FormData();
     data.append("name", v4());
     data.append("video", video);
@@ -65,6 +66,10 @@ const VideoUpload=()=> {
       setVideo(undefined)
     })
       .catch(err => console.log(err));
+        
+    }else{
+        alert('Please fill all required fields')
+    }
   };
 
   return (
