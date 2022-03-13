@@ -48,7 +48,7 @@ const VideoUpload=()=> {
   
   useEffect(()=>{console.log(videoInformation)},[videoInformation])
   const onSubmit = () => {
-    if(vieoInformation.name.length!==0&&vieoInformation.description.length!==0&video){
+    if(videoInformation.name.length!==0&&videoInformation.description.length!==0&&video){
     const data = new FormData();
     data.append("name", v4());
     data.append("video", video);
